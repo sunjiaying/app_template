@@ -5,13 +5,28 @@
 </ion-header>
 
 <ion-content padding>
+  <div padding>
+    <ion-segment [(ngModel)]="pet">
+      <ion-segment-button value="kittens">
+        Kittens
+      </ion-segment-button>
+      <ion-segment-button value="puppies">
+        Puppies
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+
   <h2>Welcome to Ionic!</h2>
   <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
+    This starter project comes with simple tabs-based layout for apps that are going to primarily use a Tabbed UI.
   </p>
   <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
+    Take a look at the
+    <code>src/pages/</code> directory to add or change tabs, update any existing page or create new pages.
   </p>
+  <button ion-button color="light" (click)="scan()">Scan</button>
+  <button ion-button>Default</button>
+  <button ion-button color="secondary">Secondary</button>
+  <button ion-button color="danger">Danger</button>
+  <button ion-button color="dark">Dark</button>
 </ion-content>
